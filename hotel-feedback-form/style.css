@@ -1,0 +1,347 @@
+/* =================================
+   RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =================================
+   BODY
+================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #222222;
+
+    background-color: #f4f1ec;
+}
+
+
+/* =================================
+   PAGE
+================================= */
+
+.page {
+    min-height: 100vh;
+
+    padding: 60px 20px;
+}
+
+
+/* =================================
+   FEEDBACK CARD
+================================= */
+
+.feedback-card {
+    width: 100%;
+    max-width: 850px;
+
+    margin: auto;
+    padding: 45px;
+
+    background-color: #ffffff;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =================================
+   FORM HEADER
+================================= */
+
+.form-header {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.subtitle {
+    color: #b26b35;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.form-header h1 {
+    font-size: 42px;
+
+    margin-bottom: 12px;
+}
+
+.form-header > p:last-child {
+    color: #777777;
+
+    font-size: 15px;
+    line-height: 1.6;
+
+    max-width: 550px;
+
+    margin: auto;
+}
+
+
+/* =================================
+   FORM SECTION
+================================= */
+
+.form-section {
+    padding: 28px 0;
+
+    border-top: 1px solid #eeeeee;
+}
+
+.form-section h2 {
+    font-size: 20px;
+
+    margin-bottom: 22px;
+}
+
+
+/* =================================
+   INPUT ROW
+================================= */
+
+.input-row {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =================================
+   INPUT GROUP
+================================= */
+
+.input-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #444444;
+}
+
+
+/* =================================
+   INPUTS
+================================= */
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    color: #333333;
+
+    background-color: #ffffff;
+
+    border: 1px solid #d8d8d8;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =================================
+   FOCUS EFFECT
+================================= */
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #b26b35;
+
+    box-shadow:
+        0 0 0 3px rgba(178, 107, 53, 0.12);
+}
+
+
+/* =================================
+   TEXTAREA
+================================= */
+
+textarea {
+    resize: vertical;
+
+    min-height: 130px;
+}
+
+
+/* =================================
+   RADIO BUTTONS
+================================= */
+
+.radio-group {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.radio-option {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 10px 14px;
+
+    color: #555555;
+
+    background-color: #f8f8f8;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+.radio-option input {
+    width: auto;
+}
+
+
+/* =================================
+   CHECKBOXES
+================================= */
+
+.checkbox-group {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+}
+
+.checkbox-option {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 12px;
+
+    color: #555555;
+
+    background-color: #f8f8f8;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+.checkbox-option input {
+    width: auto;
+}
+
+
+/* =================================
+   SUBMIT BUTTON
+================================= */
+
+.submit-button {
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 8px;
+
+    color: #ffffff;
+
+    background-color: #b26b35;
+
+    font-family: inherit;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #925426;
+
+    transform: translateY(-2px);
+}
+
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 650px) {
+
+    .page {
+        padding: 30px 15px;
+    }
+
+    .feedback-card {
+        padding: 28px 20px;
+    }
+
+    .form-header h1 {
+        font-size: 32px;
+    }
+
+    .input-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+
+    .radio-group {
+        flex-direction: column;
+    }
+
+}
